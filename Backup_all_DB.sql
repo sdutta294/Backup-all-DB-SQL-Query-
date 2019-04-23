@@ -3,8 +3,8 @@ DECLARE @path VARCHAR(256) -- path for backup files
 DECLARE @fileName VARCHAR(256) -- filename for backup  
 DECLARE @fileDate VARCHAR(20) -- used for file name
  
--- specify database backup directory
-SET @path = 'C:\Backup\'  
+-- specify database backup directory or make a Backup folder in D drive
+SET @path = 'D:\Backup\'  
  
 -- specify filename format
 SELECT @fileDate = CONVERT(VARCHAR(20),GETDATE(),112) 
